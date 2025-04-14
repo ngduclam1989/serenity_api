@@ -1,6 +1,6 @@
 package com.qa.cucumber.junit;
 
-import io.restassured.RestAssured;
+import io.restassured.*;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;

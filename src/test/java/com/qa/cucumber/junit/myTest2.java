@@ -31,4 +31,15 @@ public class myTest2 {
 
     }
 
+    @Test
+    public void post_demo(){
+        SerenityRest.given()
+                .body("{\"name\": \"morpheus\", \"job\": \"leader\"}")
+                .when()
+                .post("/api/users")
+                .then()
+                .log().all()
+                .statusCode(200);
+    }
+
 }
